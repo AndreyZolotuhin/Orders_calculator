@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ru.azolotuhin.calculator.Forms.CostAddForm">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="e1437" class="javax.swing.JList" binding="selectionList">
+        <constraints border-constraint="Center"/>
+        <properties/>
+      </component>
+      <component id="da811" class="javax.swing.JButton" binding="addCostButton">
+        <constraints border-constraint="South"/>
+        <properties>
+          <actionCommand value="Add"/>
+          <preferredSize width="177" height="40"/>
+          <text value="Добавить в список затрат"/>
+        </properties>
+      </component>
+      <grid id="97e68" binding="upperPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="10ca4" binding="upperPanelRight" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints border-constraint="East"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="dac6d" class="javax.swing.JRadioButton" binding="allRadioButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="Все"/>
+                </properties>
+              </component>
+              <component id="49397" class="javax.swing.JRadioButton" binding="humanRadioButton">
+                <constraints/>
+                <properties>
+                  <text value="Трудозатраты"/>
+                </properties>
+              </component>
+              <component id="ec8cf" class="javax.swing.JRadioButton" binding="materialRadioButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="Материалы"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="85e1d" binding="upperPanelLeft" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints border-constraint="West"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="8265b" class="javax.swing.JRadioButton" binding="constructionLightRadioButton">
+                <constraints/>
+                <properties>
+                  <text value="Лёгкие"/>
+                </properties>
+              </component>
+              <component id="edf10" class="javax.swing.JRadioButton" binding="constructionHeavyRadioButton">
+                <constraints/>
+                <properties>
+                  <text value="Тяжелые"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="constructionTypeButtonGroup">
+      <member id="edf10"/>
+      <member id="8265b"/>
+    </group>
+    <group name="costTypeButtonGroup">
+      <member id="dac6d"/>
+      <member id="49397"/>
+      <member id="ec8cf"/>
+    </group>
+  </buttonGroups>
+</form>

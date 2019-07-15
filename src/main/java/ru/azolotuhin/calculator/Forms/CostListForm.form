@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ru.azolotuhin.calculator.Forms.CostListForm">
+  <grid id="27dc6" binding="costListPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="88c2c" binding="costListScrollPane">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="8559a" class="javax.swing.JTable" binding="costListTable">
+            <constraints/>
+            <properties>
+              <columnSelectionAllowed value="false"/>
+              <fillsViewportHeight value="true"/>
+              <name value=""/>
+              <opaque value="true"/>
+              <rowSelectionAllowed value="true"/>
+              <selectionForeground color="-1544"/>
+              <showVerticalLines value="true"/>
+            </properties>
+            <clientProperties>
+              <JTable.autoStartsEdit class="java.lang.Boolean" value="false"/>
+              <terminateEditOnFocusLost class="java.lang.Boolean" value="true"/>
+            </clientProperties>
+          </component>
+        </children>
+      </scrollpane>
+      <grid id="908d3" binding="buttonPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="8214" class="javax.swing.JButton" binding="addButton">
+            <constraints/>
+            <properties>
+              <hideActionText value="false"/>
+              <text value="Добавить затрату"/>
+            </properties>
+            <clientProperties>
+              <hideActionText class="java.lang.Boolean" value="false"/>
+            </clientProperties>
+          </component>
+          <component id="cf431" class="javax.swing.JButton" binding="deleteButton">
+            <constraints/>
+            <properties>
+              <text value="Удалить затрату"/>
+            </properties>
+          </component>
+          <component id="1e673" class="javax.swing.JButton" binding="saveButton">
+            <constraints/>
+            <properties>
+              <text value="Сохранить изменения"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
